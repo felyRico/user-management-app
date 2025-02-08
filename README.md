@@ -20,7 +20,7 @@ This project is a User Management System built using React, React Router, JSON S
 
 # User Management System with React & JSON Server
 
-This project is a **User Management System** built using **React, React Router, JSON Server, Formik, Yup, and Styled Components**. It provides full **CRUD (Create, Read, Update, Delete)** functionality with API communication using `async/await` fetch requests.
+This project is a User Management System built using React, React Router, JSON Server, Formik, Yup, and Styled Components. It provides full CRUD (Create, Read, Update, Delete) functionality with API communication.
 
 ## Features
 - Fetch and display users in a table with Edit and Delete options.
@@ -38,7 +38,7 @@ This project is a **User Management System** built using **React, React Router, 
 - Styled Components (for component-based styling)
 - Fetch API with async/await (for API communication)
 
-## for instalation
+## For instalation
 Clone the Repository:
 git clone https://github.com/felyRico/User-manage-system/
 cd user-manage-system
