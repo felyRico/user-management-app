@@ -74,3 +74,19 @@ export const DeleteButton = styled.button`
   cursor: pointer;
   font-size: 0.9rem;
 `;
+
+export const FieldContainer = styled.div`
+  margin-bottom: 1rem;
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  box-sizing: border-box;
+`;
+
+export const ErrorText = styled.div`
+  color: red;
+  font-size: 0.8rem;
+`;

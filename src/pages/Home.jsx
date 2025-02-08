@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React, { useState, useEffect } from "react";
 import userService from "../services/userService";
 import AddUser from "./AddUser";
@@ -11,6 +10,7 @@ import {
   EditButton,
   DeleteButton,
 } from "../styles/Styled";
+import { GlobalStyle } from "../styles/Styled";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -48,7 +48,8 @@ const Home = () => {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem", fontFamily: "sans-serif" }}>
+      <GlobalStyle />
       <HeaderContainer>
         <AddButton onClick={() => setIsModalOpen(true)}>+ Add Member</AddButton>
       </HeaderContainer>
@@ -63,10 +64,10 @@ const Home = () => {
         <StyledTable border="0" cellPadding="10">
           <StyledTableHead>
             <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Role</th>
-              <th>Actions</th>
+              <th>NAME</th>
+              <th>EMAIL</th>
+              <th>ROLE</th>
+              <th>ACTIONS</th>
             </tr>
           </StyledTableHead>
           <tbody>

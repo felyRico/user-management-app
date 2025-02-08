@@ -52,7 +52,7 @@ const EditUser = () => {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem", fontFamily: "sans-serif" }}>
       <h2>Edit User</h2>
       <Formik
         initialValues={{ name: user.name, email: user.email, role: user.role }}
@@ -103,7 +103,5 @@ const errorStyles = {
   color: "red",
   fontSize: "0.8rem",
 };
-
-// too lazy to do it in Styled.js
 
 export default EditUser;
