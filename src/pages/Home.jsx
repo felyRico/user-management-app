@@ -1,3 +1,4 @@
+// src/pages/Home.jsx
 import React, { useState, useEffect } from "react";
 import userService from "../services/userService";
 import AddUser from "./AddUser";
@@ -48,9 +49,8 @@ const Home = () => {
 
   return (
     <div style={{ padding: "1rem" }}>
-      <h2>User Management</h2>
       <HeaderContainer>
-        <AddButton onClick={() => setIsModalOpen(true)}>Add Member</AddButton>
+        <AddButton onClick={() => setIsModalOpen(true)}>+ Add Member</AddButton>
       </HeaderContainer>
       {error && <p style={{ color: "red" }}>{error}</p>}
       {isModalOpen && (
@@ -60,7 +60,7 @@ const Home = () => {
         />
       )}
       <TableWrapper>
-        <StyledTable border="1" cellPadding="10">
+        <StyledTable border="0" cellPadding="10">
           <StyledTableHead>
             <tr>
               <th>Name</th>

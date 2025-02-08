@@ -1,10 +1,9 @@
-// src/pages/EditUser.jsx
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import userService from "../services/userService";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { AddButton } from "../styles/Styled"; // Using the same gradient button
+import { AddButton } from "../styles/Styled";
 
 const EditUser = () => {
   const { userId } = useParams();
@@ -104,5 +103,7 @@ const errorStyles = {
   color: "red",
   fontSize: "0.8rem",
 };
+
+// too lazy to do it in Styled.js
 
 export default EditUser;

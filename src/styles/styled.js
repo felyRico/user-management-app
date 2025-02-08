@@ -25,6 +25,11 @@ export const StyledTableHead = styled.thead`
   }
 `;
 
+export const TableWrapper = styled.div`
+  width: 100%;
+  overflow-x: auto;
+`;
+
 export const StyledTable = styled.table`
   width: 100%;
   border-collapse: separate;
